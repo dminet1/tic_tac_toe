@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/stylesheet.css" >
+    <title>tic tac toe</title>
+
+  </head>
+  <body>
+
+    <!-- formulaire d'identification des 2 joueurs : -->
+    <form class="" action="index.html" method="post">
+        <input type="text" id="joueur1" name="joueur1" value="" placeholder="nom du joueur 1">
+        <input type="text" id="joueur2" name="joueur2" value="" placeholder="nom du joueur 2">
+    </form>
+    <br>
+    <!-- Solution avec div : -->
+    <div id="jeu" onclick="myFunction(event)">
+
+      <div id="x1y1"></div>
+      <div id="x2y1"></div>
+      <div id="x3y1"></div>
+
+      <div id="x1y2"></div>
+      <div id="x2y2"></div>
+      <div id="x3y2"></div>
+
+      <div id="x1y3"></div>
+      <div id="x2y3"></div>
+      <div id="x3y3"></div>
+
+    </div>
+    <br>
+    <div>
+        Ci-dessus : solution avec div ; ci-dessous : solution avec canvas
+    </div>
+    <br>
+    <!-- Solution avec canvas : -->
+    <canvas id = "canvas1"  width="50" height="50" style="border:1px solid black" onclick="canvasClicked(1)"></canvas>
+    <canvas id = "canvas2"  width="50" height="50" style="border:1px solid black" onclick="canvasClicked(2)"></canvas>
+    <canvas id = "canvas3"  width="50" height="50" style="border:1px solid black" onclick="canvasClicked(3)"></canvas>
+    <br>
+    <canvas id = "canvas4"  width="50" height="50" style="border:1px solid black" onclick="canvasClicked(4)"></canvas>
+    <canvas id = "canvas5"  width="50" height="50" style="border:1px solid black" onclick="canvasClicked(5)"></canvas>
+    <canvas id = "canvas6"  width="50" height="50" style="border:1px solid black" onclick="canvasClicked(6)"></canvas>
+    <br>
+    <canvas id = "canvas7"  width="50" height="50" style="border:1px solid black" onclick="canvasClicked(7)"></canvas>
+    <canvas id = "canvas8"  width="50" height="50" style="border:1px solid black" onclick="canvasClicked(8)"></canvas>
+    <canvas id = "canvas9"  width="50" height="50" style="border:1px solid black" onclick="canvasClicked(9)"></canvas>
+    <br>
+    <!-- Bouton de réinitialisation de la grille de jeu : -->
+    <input type="button" name="reset_button" id="reset_button" value="Réinitialiser la grille">
+
+    <script src="js/script.js" type="text/javascript"></script>
+
+  </body>
+</html>

@@ -1,0 +1,32 @@
+body {
+  width: 100%;
+  text-align: center;
+}
+div {
+  border : 1px solid black;
+  margin: auto;
+}
+#jeu {
+  width: 16em;
+  height: 16em;
+  background-color: #95A5A6;
+}
+#x1y1, #x2y1, #x3y1, #x1y2, #x2y2, #x3y2, #x1y3, #x2y3, #x3y3 {
+  width: 5em;
+  height: 5em;
+  background-color: #DADFE1;
+  display: inline-block;
+}
+canvas, #joueur1, #joueur2 {
+  background-color: #ECECEC;
+}
+#reset_button {
+  color: white;
+  background-color: #43FF29;
+}
+.player1 {
+  background-color: red;
+}
+.player2 {
+  background-color: green;
+}
